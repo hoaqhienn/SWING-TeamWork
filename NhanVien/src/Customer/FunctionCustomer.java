@@ -1,0 +1,19 @@
+package Customer;
+
+import java.util.Vector;
+
+public class FunctionCustomer {
+	private Vector<Customer> customer = new Vector<>();
+
+	public FunctionCustomer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Vector<Customer> getCustomer() {
+		return customer;
+	}
+
+	
+	
+}

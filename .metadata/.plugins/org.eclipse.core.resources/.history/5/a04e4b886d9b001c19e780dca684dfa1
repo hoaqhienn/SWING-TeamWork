@@ -1,0 +1,27 @@
+package com.java.demo;
+
+import java.awt.HeadlessException;
+import java.awt.event.ActionListener;
+
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JList;
+import javax.swing.JTextField;
+
+public class JListAddName extends JFrame implements ActionListener {
+	private JButton btnAdd, btnRemove;
+	private JTextField txtName;
+	private DefaultListModel listModelName;
+	private JList listName;
+	
+	public JListAddName() throws HeadlessException {
+		super("Add name");
+		
+		//list
+		listModelName = new DefaultListModel();
+		listName = new JList(listModelName);
+	}
+	
+	
+}

@@ -1,0 +1,22 @@
+package Customer;
+
+public class Customer {
+	private String ID;
+	private String lastName;
+	private String firstName;
+	private String faction;
+	private int age;
+	private double salary;
+	
+	public Customer(String iD, String lastName, String firstName, String faction, int age, double salary) {
+		super();
+		ID = iD;
+		this.lastName = lastName;
+		this.firstName = firstName;
+		this.faction = faction;
+		this.age = age;
+		this.salary = salary;
+	}
+	
+	
+}

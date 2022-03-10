@@ -1,0 +1,10 @@
+package Customer;
+
+public class Customer {
+	private String ID;
+	private String lastName;
+	private String firstName;
+	private String faction;
+	private int age;
+	private double salary;
+}

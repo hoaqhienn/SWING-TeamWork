@@ -1,0 +1,48 @@
+package com.java.demo;
+
+import java.awt.BorderLayout;
+import java.awt.HeadlessException;
+import java.awt.event.ActionListener;
+
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+import javax.swing.border.Border;
+
+public class JListAddName extends JFrame implements ActionListener {
+	private JButton btnAdd, btnRemove;
+	private JTextField txtFirstName, txtLastName;
+	private DefaultListModel listModelName;
+	private JList listName;
+	
+	public JListAddName() throws HeadlessException {
+		super("Add name");
+		setSize(500, 300);
+		
+		//list
+		listModelName = new DefaultListModel();
+		listName = new JList(listModelName);
+		add(new JScrollPane(listName), BorderLayout.CENTER);
+		
+		JPanel pNorth, pTop, pBottom;
+		
+		pTop = new JPanel();
+		pBottom = new JPanel();
+		
+		pTop.add(new JLabel("Ho"));
+		pTop.add(txtLastName = new JTextField(15));
+		
+		pBottom.add(new JLabel("Ten"));
+		pBottom.add(txtFirstName = new JTextField(15));
+		
+		pNorth = new JPanel(new BorderLayout());
+		pNorth.add(pTop, BorderLayout.NORTH);
+	}
+	
+	
+}
