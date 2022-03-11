@@ -1,0 +1,22 @@
+package Customer;
+
+import java.util.Vector;
+
+public class FunctionCustomer {
+	private Vector<Customer> customer;
+
+	public FunctionCustomer() {
+		super();
+		customer = new Vector<>();
+	}
+
+	public Vector<Customer> getCustomer() {
+		return customer;
+	}
+
+	public boolean addCustomer(Customer c) {
+		
+		
+	}
+	
+}
